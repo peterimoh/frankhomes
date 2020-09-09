@@ -172,7 +172,7 @@ button:focus {
 .heroSection{
  min-height: 70vh;
  width: 100%;
- background: linear-gradient(30deg, rgba(22, 22, 22, 0.541), rgba(27, 26, 27, 0.3)), url('/images/kitchen-1543493_1920.jpg');
+ background: linear-gradient(30deg, rgba(22, 22, 22, 0.541), rgba(27, 26, 27, 0.3)), url('images/kitchen-1543493_1920.jpg');
  background-size: cover;
  background-blend-mode: darken;
  background-repeat: no-repeat;
