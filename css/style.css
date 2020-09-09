@@ -173,7 +173,7 @@ button:focus {
 .heroSection{
  min-height: 70vh;
  width: 100%;
- background: linear-gradient(0deg, rgba(44, 42, 44, 0.541), rgba(32, 30, 32, 0.3)), url('frankhomes/images/kitchen-1543493_1920.jpg');
+ background: linear-gradient(0deg, rgba(44, 42, 44, 0.541), rgba(32, 30, 32, 0.3)), url('/images/kitchen-1543493_1920.jpg');
  background-size: cover;
  background-repeat: no-repeat;
 }
