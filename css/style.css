@@ -1,4 +1,3 @@
-/*--------sidebar starts here-------------*/
 /* common styles */
 html {
     height: 100%;
@@ -13,24 +12,23 @@ body {
     height: 100%;
     
 }
-
 #logo{
-    height: 40px;
-    padding: 2px;
+    height: 30px;
 }
+
 .logo {
     align-self: center;
     color: #fff;
     font-weight: bold;
     font-family: 'Lato'
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .main-nav {
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 0.8rem;
-    background: rgb(196, 196, 199);
+    padding: .9rem 0.8rem;
+    background: rgb(99, 53, 90);
+    background: linear-gradient(45deg, rgb(247, 247, 247) 0%, rgb(219, 130, 110) 68%, rgba(249, 248, 113, 1) 100%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -46,8 +44,10 @@ ul.sidebar-panel-nav>li>a {
     display: block;
     padding-bottom: 0.5em;
 }
-ul.sidebar-panel-nav>li>a:hover {
-   color: cyan;
+
+ul.sidebar-panel-nav>li>a:hover{
+    color: rgb(24, 228, 228);
+   
 }
 
 /* burger */
@@ -70,7 +70,7 @@ button:focus {
     height: 30px;
     width: 32px;
     display: block;
-    z-index: 999999;
+    z-index: 999;
     border: 0;
     border-radius: 0;
     background-color: transparent;
@@ -79,7 +79,7 @@ button:focus {
 }
 
 .burger-bar {
-    background-color: #ffffff;
+    background-color: #130f40;
     position: absolute;
     top: 50%;
     right: 6px;
@@ -166,14 +166,36 @@ button:focus {
     padding: 3rem 20px 2rem 20px;
     width: 300px;
 }
-/*----------sidebar ends here---------------*/
 
 
 /*-----------hero section--------------------*/
 .heroSection{
  min-height: 70vh;
  width: 100%;
- background: linear-gradient(0deg, rgba(44, 42, 44, 0.541), rgba(32, 30, 32, 0.3)), url('frankhomes/images/kitchen-1543493_1920.jpg');
+ background: linear-gradient(30deg, rgba(22, 22, 22, 0.541), rgba(27, 26, 27, 0.3)), url('/images/kitchen-1543493_1920.jpg');
  background-size: cover;
+ background-blend-mode: darken;
  background-repeat: no-repeat;
+}
+
+.hero{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    right: 30%;
+}
+.hero h2{
+text-align: center;
+text-transform: uppercase;
+color: #fff;
+}
+.hero .btn-secondary{
+    background: rgb(15, 114, 228) !important;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 0;
+}
+.hero .btn-secondary:hover {
+    background: rgba(248, 62, 62, 0.883) !important;
+    transition: .8s;
 }
