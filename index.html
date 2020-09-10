@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Home</title>
+    <link rel="shortcut icon" href="/images/logo2.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!---bootstrap----->
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <!----vue cdn------>
+        <script src="js/vue.min.js"></script>
+</head>
+
+<body>
+    <!-----sidebar-------->
+    <div class="navigation fixed-top">
+        <div id="app">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html"><img id="logo" src="/images/logo2.png"></a>
+                </div>
+                <Burger></Burger>
+            </nav>
+
+            <Sidebar>
+                <ul class="sidebar-panel-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">Buy</a></li>
+                    <li><a href="#about">Rent</a></li>
+                    <li><a href="#contact">Mortgage</a></li>
+                </ul>
+            </Sidebar>
+        </div>
+
+        <template id="sidebar">
+            <div class="sidebar">
+                <div class="sidebar-backdrop" @click="closeSidebarPanel" v-if="isPanelOpen"></div>
+                <transition name="slide">
+                    <div v-if="isPanelOpen" class="sidebar-panel">
+                        <slot></slot>
+                    </div>
+                </transition>
+            </div>
+        </template>
+
+        <template id="burger">
+            <div id="burger" :class="{ 'active' : isBurgerActive }" @click.prevent="toggle">
+                <slot>
+                    <button type="button" class="burger-button" title="Menu">
+                        <span class="hidden">Toggle menu</span>
+                        <span class="burger-bar burger-bar--1"></span>
+                        <span class="burger-bar burger-bar--2"></span>
+                        <span class="burger-bar burger-bar--3"></span>
+                    </button>
+                </slot>
+            </div>
+        </template>
+    </div>
+
+    <!------hero section----------------->
+    <section class="heroSection">
+        <div class="hero">
+
+            <h2>Discover a place you'll love to live</h2>
+            <center><button class="btn btn-secondary">Book a Quote</button></center>
+      
+</div>
+        </div>
+
+    </section>
+    <!--sidebar ends here----->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
