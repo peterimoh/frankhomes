@@ -1,16 +1,9 @@
 /* common styles */
-html {
-    height: 100%;
-    overflow: hidden;
-}
-
 body {
     border: 0;
     margin: 0;
     padding: 0;
-    font-family: 'Lato';
-    height: 100%;
-    
+    font-family: 'Lato'; 
 }
 #logo{
     height: 30px;
@@ -172,7 +165,8 @@ button:focus {
 .heroSection{
  min-height: 70vh;
  width: 100%;
- background: linear-gradient(30deg, rgba(22, 22, 22, 0.541), rgba(27, 26, 27, 0.3)), url('https://peterimoh.github.io/frankhomes/images/kitchen-1543493_1920.jpg');
+ background: linear-gradient(30deg, rgba(22, 22, 22, 0.541), rgba(27, 26, 27, 0.3)),
+ url('https://peterimoh.github.io/frankhomes/images/kitchen-1543493_1920.jpg');
  background-size: cover;
  background-blend-mode: darken;
  background-repeat: no-repeat;
@@ -198,4 +192,90 @@ color: #fff;
 .hero .btn-secondary:hover {
     background: rgba(248, 62, 62, 0.883) !important;
     transition: .8s;
+}
+
+/*---------wrapper--------------*/
+/*------main columns---------------*/
+
+.wrapper {
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+    color: #666;
+}
+
+header {
+    padding: 0 15px;
+}
+
+.columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+.column {
+    flex: 1;
+    border: 1px solid rgb(214, 214, 214);
+    margin: 2px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+    &:first-child {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+
+footer {
+    padding: 0 15px;
+}
+
+.column .img1 {
+    height: 100px;
+    border: 1px solid #666;
+    padding: 5px;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.column .img2 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #666;
+    padding: 5px;
+    border-radius: 200px;
+    margin: 15px;
+}
+
+.column .img3 {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #666;
+    padding: 5px;
+    border-radius: 200px;
+    margin: 15px;
+}
+
+.column .img1:hover {
+    background: tomato;
+    border-color: tomato;
+}
+
+.column .img2:hover {
+    background: tomato;
+    border-color: tomato;
+}
+
+.column .img3:hover {
+    background: tomato;
+    border-color: tomato;
 }

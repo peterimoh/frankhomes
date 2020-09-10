@@ -1,11 +1,24 @@
-/* Extra small devices (phones, 600px and down) */
+
+
 @media only screen and (max-width: 600px) {
     .hero {
         position: absolute;
-        top: 18%;
-        left: 30%;
-        right: 30%;
+        top: 28%;
+        left: 20%;
+        right: 20%;
 
+    }
+    .heroSection {
+        min-height: 78vh;
+    }
+    .burger-button {
+        z-index: 999999;
+    }
+    .main-nav {
+        padding: 1.3rem 0.8rem;
+    }
+    #logo {
+        height: 40px;
     }
 }
 
@@ -31,7 +44,16 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    ...
+  .heroSection {
+      min-height: 70vh;
+  }
+   .hero {
+       position: absolute;
+       top: 23%;
+       left: 30%;
+       right: 30%;
+
+   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
