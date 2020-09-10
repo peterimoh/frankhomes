@@ -20,6 +20,14 @@
     #logo {
         height: 40px;
     }
+    .imageContainer {
+        padding: 75px 0;
+        margin: 0 auto;
+        width: 357px;
+    }
+
+    
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
