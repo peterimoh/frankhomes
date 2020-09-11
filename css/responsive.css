@@ -15,7 +15,7 @@
         z-index: 999999;
     }
     .main-nav {
-        padding: 1.3rem 0.8rem;
+        padding: 0.6rem 0.8rem;
     }
     #logo {
         height: 40px;
@@ -23,11 +23,37 @@
     .imageContainer {
         padding: 75px 0;
         margin: 0 auto;
-        width: 278px;
+        width: 357px;
     }
+    .testimonials {
+        background-color: #f33f02;
+        position: relative;
+        padding-top: 80px;
 
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 60%;
+            background-color: #f33f02;
+        }
+
+    }
     
 
+     .owl-carousel .owl-next {
+         right: 120px;
+         top: 77%;
+     }
+     .owl-carousel .owl-prev {
+         left: 120px;
+         top: 77%;
+     }
+     #customers-testimonials p{
+    margin-bottom: 49px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -43,6 +69,11 @@
         right: 30%;
 
     }
+    .owl-carousel .owl-next {
+        right: -5px;
+        top: 82%;
+    }
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
